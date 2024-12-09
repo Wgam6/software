@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor Student as S
+actor Teacher as T
+actor Administrator as A
+
+rectangle "大学生上课打卡系统" {
+    usecase "学生打卡" as UC1
+    usecase "教师查看打卡记录" as UC2
+    usecase "管理员管理课程信息" as UC3
+    usecase "管理员管理学生信息" as UC4
+}
+
+S --> UC1
+T --> UC2
+A --> UC3
+A --> UC4
+@enduml
